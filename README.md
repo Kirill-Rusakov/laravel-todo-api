@@ -11,7 +11,7 @@
 - Eloquent ORM
 - REST API (`routes/api.php`)
 - PHPUnit (тестирование)
-- MySQL / SQLite
+- MySQL
 
 ---
 
