@@ -17,39 +17,40 @@
 
 ## 🔧 Установка проекта
 
-```bash
 git clone https://github.com/your-username/laravel-todo-api.git
 cd laravel-todo-api
 composer install
 cp .env.example .env
 php artisan key:generate
 php artisan migrate
-php artisan serve```
+php artisan serve
 
 ---
 
 ## 🔐 Аутентификация
-```POST /api/register — регистрация
+
+POST /api/register — регистрация
 
 POST /api/login — получение токена
 
-POST /api/logout — выход```
+POST /api/logout — выход
 
-## 📌 После логина передавайте Bearer Token в заголовках Authorization
+### 📌 После логина передавайте Bearer Token в заголовках Authorization
 
 ---
 
 ## 📌 Маршруты задач (auth:sanctum)
+
 Метод	URI	Описание
-```GET	/api/tasks	Получить все задачи
+GET	/api/tasks	Получить все задачи
 POST	/api/tasks	Создать задачу
 GET	/api/tasks/{id}	Получить задачу
 PUT	/api/tasks/{id}	Обновить задачу
-DELETE	/api/tasks/{id}	Удалить задачу```
+DELETE	/api/tasks/{id}	Удалить задачу
 
 ---
 
-🧪 Тестирование
-```php artisan test```
+## 🧪 Тестирование
+php artisan test
 
-✅ Покрытие тестами (на данный момент): создание задачи
+### ✅ Покрытие тестами (на данный момент): создание задачи
